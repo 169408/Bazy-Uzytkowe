@@ -1,0 +1,276 @@
+cd D:\
+ ans  =
+
+  "D:\"
+
+--> cd ruslanGit
+ ans  =
+
+  "D:\ruslanGit"
+
+--> cd cw_10.01_scilab
+ ans  =
+
+  "D:\ruslanGit\cw_10.01_scilab"
+
+--> clf();
+
+--> x = [0:0.01:2*%pi];
+
+--> y = sin(x);
+
+--> z = cos(x);
+
+--> plot(x,y)
+
+--> plot(x, 'r', y)
+ПОПЕРЕДЖЕННЯ: getPlotPropertyName: помилкове значення для вхідного параметра №1. Мало бути вказано коректну назву властивості.
+ПОПЕРЕДЖЕННЯ: getPlotPropertyName: помилкове значення для вхідного параметра №1. Мало бути вказано коректну назву властивості.
+
+--> plot(x,y)
+
+--> plot(x,y)
+
+--> clf();
+
+--> x = [0:0.01:2*%pi];
+
+--> y = sin(x);
+
+--> z = cos(x);
+
+--> plot(x,y)
+
+--> plot(x,y)
+
+--> plot(x,y, 'r')
+
+--> plot(x,y,x,z, 'b')
+
+--> plot(x,y,'LineWidth',3)
+
+--> plot(x,z,'r','LineWidth',3)
+
+--> plot(x,y,'LineWidth',3)
+
+--> plot(x,z,'r','LineWidth',3)
+
+--> xgrid
+
+--> xlabel('x')
+
+--> ylabel('sin(x), cos(x)')
+
+--> plot(x,y,'LineWidth',6)
+
+--> title('Plot of sin(x) and cos(x)')
+
+--> legend('sin(x)', 'cos(x)',3)
+ ans  =
+
+Handle of type "Legend" with properties:
+========================================
+parent: Axes
+children: []
+visible = "on"
+text = ["sin(x)";"cos(x)"]
+font_style = 6
+font_size = 1
+font_color = -1
+fractional_font = "off"
+links = ["Polyline";"Polyline"]
+legend_location = "in_lower_left"
+position = [0.134375,0.778587]
+line_width = 0.1
+line_mode = "on"
+thickness = 1
+foreground = -1
+fill_mode = "on"
+background = -2
+marks_count = 3
+clip_state = "off"
+clip_box = []
+user_data = []
+tag = ""
+
+--> x = [0:0.01:10];
+
+--> y = e^(3x);
+y = e^(3x);
+       ^~^
+Помилка: syntax error, unexpected identifier, expecting end of file
+
+--> y = e^3x
+y = e^3x
+      ^~^
+Помилка: syntax error, unexpected identifier, expecting end of file
+
+--> y = e^3x;
+y = e^3x;
+      ^~^
+Помилка: syntax error, unexpected identifier, expecting end of file
+
+--> y = %e^(3x);
+y = %e^(3x);
+        ^~^
+Помилка: syntax error, unexpected identifier, expecting end of file
+
+--> y = %e^3x;
+y = %e^3x;
+       ^~^
+Помилка: syntax error, unexpected identifier, expecting end of file
+
+--> y = %e;
+
+--> z = y^(3x);
+z = y^(3x);
+       ^~^
+Помилка: syntax error, unexpected identifier, expecting end of file
+
+--> z = y^3x;
+z = y^3x;
+      ^~^
+Помилка: syntax error, unexpected identifier, expecting end of file
+
+--> y = sin(x);
+
+--> plot(x,y,'LineWidth',3)
+
+--> y = %e^(3*x);
+
+--> plot(x,y,'LineWidth',3)
+
+--> xgrid;
+
+--> plot(x,y,'LineWidth',3)
+
+--> clf();
+
+--> x = [0:0.01:10];
+
+--> y = %e^(3*x);
+
+--> plot(x,y);
+
+--> xgrid;
+
+--> xlable('x');
+
+Невизначена змінна: xlable
+
+--> xlabel('x');
+
+--> ylabel('e^3x');
+
+--> title('f(x)=e^3x');
+
+  "Рисунок збережено."
+ findobj  = 
+
+[h]=findobj(varargin)
+ findobj  = 
+
+[h]=findobj(varargin)
+
+--> 
+
+--> y = x^3 + 4*x^2 + 3*x + 5;
+
+--> plot(x,y,'lineWidth',4);
+
+--> clf();
+
+--> plot(x,y,'LineWidth',6)
+
+--> y = x^3 + 4*x^2 + 3*x + 5;
+
+--> plot(x,y,'lineWidth',4);
+
+--> clf();
+
+--> x = [0:0.01:10];
+
+--> y = x^3 + 4*x^2 + 3*x + 5;
+
+--> plot(x,y,'lineWidth',4);
+
+--> xlabel('x');
+
+--> ylabel('y);
+ylabel('y);
+        ^~~^
+Помилка: Unexpected end of file in a string.
+
+--> ylabel('y');
+
+--> title('f(x)= x^3+4*x^2+3*x+5');
+
+  "Рисунок збережено."
+
+--> clf();
+
+--> y = log2(2*x+4)/log2(5);
+
+--> plot(x,y,'lineWidth'4);
+plot(x,y,'lineWidth'4);
+                    ^^
+Помилка: syntax error, unexpected integer, expecting "," or )
+
+--> plot(x,y,'lineWidth',4);
+
+--> xlabel('x');
+
+--> ylabel('y');
+
+--> title('f(x)= log_5(2x+4)');
+
+--> xgrid;
+
+  "Рисунок збережено."
+
+--> clf();
+
+--> y = log2(x^3)/log2(10);
+
+--> plot(x,y,'lineWidth',4);
+
+--> xlabel('x');
+
+--> ylabel('y');
+
+--> title('f(x)= log(x^3)');
+
+--> xgrid;
+
+  "Рисунок збережено."
+
+--> clf();
+
+--> y = log2(-3*x-4)/log2(%e);
+
+--> plot(x,y,'lineWidth',4,'r');
+convstr: помилковий тип вхідного параметра №2: слід використовувати матрицю з рядків.
+ПОПЕРЕДЖЕННЯ: getPlotPropertyName: Wrong type for input argument #1: String expected.
+у рядку   343 функції plot ( D:\scilab\scilab-6.1.1\modules\graphics\macros\plot.sci рядок 356 )
+
+Невизначена змінна «PName» у функції «getPlotPropertyName».
+
+--> plot(x,y,'r','lineWidth',4);
+
+--> xlabel('x');
+
+--> ylabel('y');
+
+--> title('f(x)= ln(−3𝑥 − 4)');
+
+--> title('f(x) = ');
+
+--> title('f(x) = ln(-3x-4)');
+
+--> xgrid;
+
+--> legend('ln(-3x-4)',4);
+
+  "Рисунок збережено."
+
+--> savehistory('history.txt');
